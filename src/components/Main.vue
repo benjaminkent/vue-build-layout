@@ -4,7 +4,7 @@
       .hero
         img.headshot(src="../assets/square-headshot.jpg" alt="head shot")
         span.quote
-          h1.hello Hi, I'm Ben
+          h1.hello Hey, I'm Ben
           p.about I'm a Software Engineer in St. Petersburg, FL.
           img.tri(src="../assets/tri.png")
       .work
@@ -17,8 +17,24 @@
             header.article-header
               h2 {{ item.header }}
               p {{ item.date }}
-            p {{ item.content }}
+            p.content {{ item.content }}
           button.keep-reading Keep Reading
+      .stay-connected-container
+        h3.connect Stay connected with me.
+        span.social
+          i.fab.fa-twitter
+          i.fab.fa-instagram
+          i.fab.fa-facebook-f
+          i.fab.fa-github
+    footer.footer
+      p.footer-content
+        | 2019 Benjamin Kent Jehl
+      p.footer-content
+        | Made with
+        i.fas.fa-heart
+        | in St Petersburg, FL.
+        a(href="https://benjaminkent.io" target="_blank")
+          | benjaminkent.io
 </template>
 
 <script>
@@ -95,7 +111,7 @@ export default {
 }
 
 .bottom {
-  background-color: #000;
+  background-color: #030016;
   padding: 20px;
 
   .article-container {
@@ -103,7 +119,8 @@ export default {
     .article {
       background-color: #fff;
       border-radius: 5px;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
+      padding-bottom: 25px;
 
       .article-image {
         height: 60px;
@@ -114,8 +131,12 @@ export default {
       }
 
       .article-main {
-        padding: 20px;
+        padding: 20px 20px 5px 20px;
         color: #0f0f0f;
+
+        .content {
+          margin-bottom: 0;
+        }
 
         .article-header {
           display: flex;
@@ -132,8 +153,78 @@ export default {
       }
 
       .keep-reading {
-        background-color: blue;
+        background-color: #007FE8;
+        color: #fff;
+        position: absolute;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 7px;
+        border-radius: 5px;
+        border: none;
+        right: 50px;
+        cursor: pointer;
       }
+    }
+  }
+
+  .stay-connected-container {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .connect {
+      color: #fff;
+      font-size: 20px;
+    }
+
+    .social {
+      font-size: 32px;
+      cursor: pointer;
+
+      i {
+        margin: 0 15px;
+      }
+
+      .fa-twitter {
+        color: #47A2ED;
+      }
+
+      .fa-instagram {
+        color: #F93452;
+      }
+
+      .fa-facebook-f {
+        color: #627EBA;
+      }
+
+      .fa-github {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.footer {
+  padding: 125px 0 20px 0;
+  background-color: #030016;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .footer-content {
+    color: #f4f4f4;
+    margin: 2px 0;
+
+    a {
+      color: #f4f4f4;
+      text-decoration: none;
+      margin-left: 5px;
+    }
+
+    .fa-heart {
+      color: red;
+      margin: 0 4px;
     }
   }
 }
