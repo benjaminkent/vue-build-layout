@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "image": "react.png",
+    "header": "Hello, React.",
+    "date": "September 12, 2018",
+    "content": "Bacon ipsum dolor amet cow tongue ham andouille. Chuck landjaeger andouille pastrami, salami capicola rump burgdoggen beef pork meatball leberkas sirloin ham hock. Cow tail pancetta pork loin. Ribeye biltong pancetta ham ground round burgdoggen salami pork belly."
+  },
+  {
+    "id": 2,
+    "image": "code.png",
+    "header": "Fizz Buzz",
+    "date": "September 35, 2018",
+    "content": "Spicy jalapeno bacon ipsum dolor amet ribeye picanha sirloin, bacon frankfurter bresaola pork loin ham tail biltong cow rump. Andouille biltong salami, capicola sirloin chicken boudin tri-tip swine shank meatball pastrami prosciutto jowl."
+  }
+]
